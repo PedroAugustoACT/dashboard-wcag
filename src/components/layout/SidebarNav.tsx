@@ -77,12 +77,29 @@ export function SidebarNav({ sections, collapsed }: SidebarNavProps) {
                     justifyContent: collapsed ? 'center' : 'flex-start',
                     px: collapsed ? 1 : 1.5,
                     transition: 'all 150ms ease',
-                    '&.Mui-selected': {
-                      backgroundColor: 'primary.main',
-                      color: 'white',
-                      '& .MuiListItemIcon-root': { color: 'white' },
-                      '&:hover': { backgroundColor: 'primary.dark' },
+                    // ── Focus-visible ring — always visible for keyboard users ──
+                    '&:focus-visible': {
+                      outline: '2px solid',
+                      outlineColor: 'primary.light',
+                      outlineOffset: '2px',
                     },
+                    // ── Selected state ──
+                    // Uses a tinted background so primary.light text (≥4.5:1 vs #111827)
+                    // is readable in both dark and light contexts.
+                    '&.Mui-selected': {
+                      backgroundColor: 'rgba(59,130,246,0.18)', // primary.main @ 18%
+                      color: 'primary.light',
+                      '& .MuiListItemIcon-root': { color: 'primary.light' },
+                      '&:hover': {
+                        backgroundColor: 'rgba(59,130,246,0.26)', // slightly stronger on hover
+                        color: 'primary.light',
+                        '& .MuiListItemIcon-root': { color: 'primary.light' },
+                      },
+                      '&:focus-visible': {
+                        outlineColor: 'primary.light',
+                      },
+                    },
+                    // ── Unselected state ──
                     '&:not(.Mui-selected)': {
                       color: 'text.secondary',
                       '&:hover': {
