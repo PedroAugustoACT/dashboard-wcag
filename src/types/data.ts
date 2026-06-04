@@ -243,10 +243,16 @@ export interface RedeCoocorrencia {
 // Insights
 // ---------------------------------------------------------------------------
 
-/** From insights.json — high-level dashboard insights. */
-export interface Insights {
-  violacao_mais_frequente: string;
-  tag_html_mais_problematica: string;
-  seletor_css_mais_problematico: string;
-  cluster_dominante: number;
+/** A single analytical insight from insights.json. */
+export interface Insight {
+  id: number;
+  titulo: string;
+  descricao: string;
+  evidencias: string[];
+  impacto_pratico: string[];
+}
+
+/** Root shape of insights.json. */
+export interface InsightsData {
+  insights: Insight[];
 }

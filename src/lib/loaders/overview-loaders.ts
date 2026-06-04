@@ -7,14 +7,34 @@
 import { parseCsv } from '@/lib/parsers';
 import { parseJson } from '@/lib/parsers';
 import { toString, toNumber } from '@/lib/validators';
-import type { Insights, DatasetTratado } from '@/types';
+import type { Insight, InsightsData, DatasetTratado } from '@/types';
 
 /**
- * Load high-level dashboard insights.
+ * Load all analytical insights.
  * Source: insights.json
  */
-export async function loadInsights(): Promise<Insights> {
-  return parseJson<Insights>('insights.json');
+export async function loadInsights(): Promise<Insight[]> {
+  const data = await parseJson<InsightsData>('insights.json');
+  return data.insights;
+}
+
+/**
+ * Derive a legacy flat summary from the new insights array.
+ * Used by the overview/home page banner.
+ * Returns the titulo of the first insight as the dominant violation label,
+ * and falls back gracefully when insights are empty.
+ */
+export async function loadInsightsSummary(): Promise<{
+  violacao_mais_frequente: string;
+  tag_html_mais_problematica: string;
+}> {
+  const insights = await loadInsights();
+  const first = insights[0];
+  const second = insights[1];
+  return {
+    violacao_mais_frequente: first?.titulo ?? '—',
+    tag_html_mais_problematica: second?.titulo ?? '—',
+  };
 }
 
 /**

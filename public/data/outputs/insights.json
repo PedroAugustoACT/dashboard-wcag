@@ -1,6 +1,46 @@
 {
-    "violacao_mais_frequente": "target-size",
-    "tag_html_mais_problematica": "a",
-    "seletor_css_mais_problematico": "div.search-custom__input-group > ul#search-list > li.navitem > a",
-    "cluster_dominante": 2
+    "insights": [
+        {
+            "id": 1,
+            "titulo": "As violações WCAG concentram-se em componentes reutilizados",
+            "descricao": "As violações WCAG não estão distribuídas aleatoriamente. Grande parte dos erros concentra-se em poucos componentes reutilizados da interface.",
+            "evidencias": [
+                "Alta incidência de falhas em seletores CSS específicos",
+                "Forte concentração de erros na tag HTML <a>",
+                "Componentes compartilhados propagam violações entre múltiplas páginas"
+            ],
+            "impacto_pratico": [
+                "Pequenas refatorações arquiteturais podem gerar melhorias em larga escala",
+                "Correções centralizadas reduzem dívida técnica com maior eficiência"
+            ]
+        },
+        {
+            "id": 2,
+            "titulo": "Violações WCAG apresentam dependência estrutural",
+            "descricao": "As regras de associação identificaram coocorrência significativa entre diferentes violações WCAG.",
+            "evidencias": [
+                "Regras de associação identificaram coocorrência entre violações",
+                "Associação principal: {target-size, link-name} → {accesskeys}",
+                "Lift = 3.48"
+            ],
+            "impacto_pratico": [
+                "Corrigir um grupo de falhas pode eliminar múltiplos problemas simultaneamente",
+                "Estratégias orientadas por padrões são mais eficientes que correções isoladas"
+            ]
+        },
+        {
+            "id": 3,
+            "titulo": "Elevada similaridade arquitetural entre os portais",
+            "descricao": "Os resultados indicam forte reaproveitamento estrutural entre os sistemas analisados.",
+            "evidencias": [
+                "Clusterização concentrou a maioria das páginas em um único grupo",
+                "Baixa dispersão estrutural observada no PCA",
+                "Indícios de reutilização de templates e bibliotecas"
+            ],
+            "impacto_pratico": [
+                "Problemas de acessibilidade podem se propagar entre diferentes instituições",
+                "Melhorias aplicadas em componentes compartilhados podem beneficiar múltiplos sistemas simultaneamente"
+            ]
+        }
+    ]
 }

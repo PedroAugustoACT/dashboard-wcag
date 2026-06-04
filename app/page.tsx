@@ -5,7 +5,7 @@ import WebIcon from '@mui/icons-material/Web';
 import RuleIcon from '@mui/icons-material/Rule';
 import {
   getDatasetSummary,
-  loadInsights,
+  loadInsightsSummary,
   loadDistribuicaoSeveridade,
   loadTopDominios,
 } from '@/lib/loaders';
@@ -13,9 +13,9 @@ import { SeverityDistributionChart } from '@/features/overview/components/Severi
 import { TopDomainsChart } from '@/features/overview/components/TopDomainsChart';
 
 export default async function OverviewPage() {
-  const [summary, insights, severityDistribution, topDomains] = await Promise.all([
+  const [summary, insightsSummary, severityDistribution, topDomains] = await Promise.all([
     getDatasetSummary(),
-    loadInsights(),
+    loadInsightsSummary(),
     loadDistribuicaoSeveridade(),
     loadTopDominios(),
   ]);
@@ -28,7 +28,7 @@ export default async function OverviewPage() {
       />
 
       <InfoBanner
-        message={`Tag HTML mais problemática: <${insights.tag_html_mais_problematica}>. Violação mais frequente: ${insights.violacao_mais_frequente}.`}
+        message={`Tag HTML mais problemática: <${insightsSummary.tag_html_mais_problematica}>. Violação mais frequente: ${insightsSummary.violacao_mais_frequente}.`}
         severity="info"
         sx={{ mb: 2 }}
       />

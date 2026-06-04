@@ -57,6 +57,7 @@ export {
 // Overview & insights
 export {
   loadInsights,
+  loadInsightsSummary,
   loadDatasetTratado,
   loadDatasetTratadoSample,
   getDatasetRowCount,
