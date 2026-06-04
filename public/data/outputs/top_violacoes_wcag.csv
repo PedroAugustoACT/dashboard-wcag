@@ -1,0 +1,16 @@
+regra_wcag_id,count
+target-size,11170
+link-name,1130
+color-contrast,923
+image-alt,270
+button-name,261
+landmark-one-main,150
+listitem,124
+heading-order,111
+link-in-text-block,99
+frame-title,77
+aria-required-parent,65
+html-has-lang,54
+aria-required-children,32
+accesskeys,28
+meta-viewport,22

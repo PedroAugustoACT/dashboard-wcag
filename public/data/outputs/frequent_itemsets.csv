@@ -1,0 +1,65 @@
+support,itemsets
+0.06930693069306931,frozenset({'accesskeys'})
+0.40594059405940597,frozenset({'button-name'})
+0.4207920792079208,frozenset({'color-contrast'})
+0.10643564356435643,frozenset({'frame-title'})
+0.23267326732673269,frozenset({'heading-order'})
+0.13366336633663367,frozenset({'html-has-lang'})
+0.20297029702970298,frozenset({'image-alt'})
+0.3712871287128713,frozenset({'landmark-one-main'})
+0.09653465346534654,frozenset({'link-in-text-block'})
+0.48514851485148514,frozenset({'link-name'})
+0.054455445544554455,frozenset({'listitem'})
+0.054455445544554455,frozenset({'meta-viewport'})
+0.3069306930693069,frozenset({'target-size'})
+0.054455445544554455,"frozenset({'accesskeys', 'link-name'})"
+0.05198019801980198,"frozenset({'accesskeys', 'target-size'})"
+0.10643564356435643,"frozenset({'button-name', 'color-contrast'})"
+0.0891089108910891,"frozenset({'button-name', 'heading-order'})"
+0.10891089108910891,"frozenset({'button-name', 'image-alt'})"
+0.07425742574257425,"frozenset({'button-name', 'landmark-one-main'})"
+0.22772277227722773,"frozenset({'button-name', 'link-name'})"
+0.12871287128712872,"frozenset({'target-size', 'button-name'})"
+0.09900990099009901,"frozenset({'frame-title', 'color-contrast'})"
+0.12871287128712872,"frozenset({'heading-order', 'color-contrast'})"
+0.09405940594059406,"frozenset({'image-alt', 'color-contrast'})"
+0.08415841584158416,"frozenset({'landmark-one-main', 'color-contrast'})"
+0.06683168316831684,"frozenset({'link-in-text-block', 'color-contrast'})"
+0.27722772277227725,"frozenset({'link-name', 'color-contrast'})"
+0.15099009900990099,"frozenset({'target-size', 'color-contrast'})"
+0.10396039603960396,"frozenset({'frame-title', 'link-name'})"
+0.10148514851485149,"frozenset({'heading-order', 'image-alt'})"
+0.07178217821782178,"frozenset({'heading-order', 'landmark-one-main'})"
+0.16831683168316833,"frozenset({'heading-order', 'link-name'})"
+0.08415841584158416,"frozenset({'target-size', 'heading-order'})"
+0.13366336633663367,"frozenset({'html-has-lang', 'landmark-one-main'})"
+0.10148514851485149,"frozenset({'landmark-one-main', 'image-alt'})"
+0.19554455445544555,"frozenset({'link-name', 'image-alt'})"
+0.07425742574257425,"frozenset({'target-size', 'image-alt'})"
+0.18316831683168316,"frozenset({'link-name', 'landmark-one-main'})"
+0.05198019801980198,"frozenset({'meta-viewport', 'landmark-one-main'})"
+0.08663366336633663,"frozenset({'target-size', 'landmark-one-main'})"
+0.054455445544554455,"frozenset({'link-in-text-block', 'target-size'})"
+0.21534653465346534,"frozenset({'target-size', 'link-name'})"
+0.05198019801980198,"frozenset({'accesskeys', 'link-name', 'target-size'})"
+0.10643564356435643,"frozenset({'button-name', 'link-name', 'color-contrast'})"
+0.054455445544554455,"frozenset({'target-size', 'button-name', 'color-contrast'})"
+0.054455445544554455,"frozenset({'button-name', 'heading-order', 'image-alt'})"
+0.0891089108910891,"frozenset({'button-name', 'heading-order', 'link-name'})"
+0.10396039603960396,"frozenset({'button-name', 'link-name', 'image-alt'})"
+0.07425742574257425,"frozenset({'button-name', 'link-name', 'landmark-one-main'})"
+0.10396039603960396,"frozenset({'target-size', 'link-name', 'button-name'})"
+0.09653465346534654,"frozenset({'frame-title', 'link-name', 'color-contrast'})"
+0.08663366336633663,"frozenset({'heading-order', 'link-name', 'color-contrast'})"
+0.06435643564356436,"frozenset({'target-size', 'heading-order', 'color-contrast'})"
+0.09158415841584158,"frozenset({'link-name', 'image-alt', 'color-contrast'})"
+0.08168316831683169,"frozenset({'link-name', 'landmark-one-main', 'color-contrast'})"
+0.12871287128712872,"frozenset({'target-size', 'link-name', 'color-contrast'})"
+0.10148514851485149,"frozenset({'heading-order', 'link-name', 'image-alt'})"
+0.054455445544554455,"frozenset({'heading-order', 'landmark-one-main', 'link-name'})"
+0.08168316831683169,"frozenset({'target-size', 'heading-order', 'link-name'})"
+0.09900990099009901,"frozenset({'link-name', 'landmark-one-main', 'image-alt'})"
+0.07178217821782178,"frozenset({'target-size', 'link-name', 'image-alt'})"
+0.054455445544554455,"frozenset({'target-size', 'link-name', 'button-name', 'color-contrast'})"
+0.054455445544554455,"frozenset({'button-name', 'heading-order', 'link-name', 'image-alt'})"
+0.06188118811881188,"frozenset({'target-size', 'heading-order', 'link-name', 'color-contrast'})"

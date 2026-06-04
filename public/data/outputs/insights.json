@@ -1,0 +1,6 @@
+{
+    "violacao_mais_frequente": "target-size",
+    "tag_html_mais_problematica": "a",
+    "seletor_css_mais_problematico": "div.search-custom__input-group > ul#search-list > li.navitem > a",
+    "cluster_dominante": 2
+}

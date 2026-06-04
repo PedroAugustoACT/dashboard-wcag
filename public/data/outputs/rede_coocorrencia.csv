@@ -1,0 +1,14 @@
+source,target,weight
+accesskeys,target-size,3.1099706744868034
+accesskeys,link-name,3.482758620689655
+target-size,link-name,3.1099706744868034
+link-name,frame-title,3.271594684385382
+link-name,button-name,2.9705882352941173
+link-name,heading-order,3.1251758087201127
+link-name,image-alt,2.6631509558338826
+frame-title,color-contrast,3.271594684385382
+button-name,image-alt,3.0108401084010836
+button-name,heading-order,2.9705882352941173
+image-alt,heading-order,2.9705882352941173
+image-alt,landmark-one-main,2.6631509558338826
+html-has-lang,landmark-one-main,2.6933333333333334
